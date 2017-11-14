@@ -4,10 +4,10 @@ app = express(),
   mongoose = require('mongoose'),
   Property = require('./api/models/todoListModel'), //created model loading here
   bodyParser = require('body-parser');
-  
+
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/Tododb'); 
+mongoose.connect('mongodb://54.224.133.253:27017/Property');
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
