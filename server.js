@@ -3,7 +3,7 @@ var express = require('express'),
 	app = express(),
 	  port = process.env.PORT || 3000,
 	  mongoose = require('mongoose'),
-	  Property = require('./api/models/todoListModel'), //created model loading here
+	  Property = require('./api/models/toiletListModel'), //created model loading here
 	  bodyParser = require('body-parser');
 
 // mongoose instance connection url connection
