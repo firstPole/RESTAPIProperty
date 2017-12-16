@@ -8,8 +8,12 @@ var express = require('express'),
 
 // mongoose instance connection url connection
  mongoose.Promise = global.Promise;
- mongoose.connect('mongodb://54.210.13.122:27017/Property');
+ mongoose.createConnection('mongodb://54.163.164.210:27017/Property');
 
 
  app.use(bodyParser.urlencoded({ extended: true }));
  app.use(bodyParser.json());
+
+ app.listen(port, function() {
+  console.log("Server is running at : http://localhost:3000");
+ });
